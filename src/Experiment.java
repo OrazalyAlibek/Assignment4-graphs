@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Experiment {
     private List<long[]> results;
+
     public Experiment() {
         results = new ArrayList<>();
     }

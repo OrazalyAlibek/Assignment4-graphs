@@ -39,6 +39,7 @@ public class Graph {
             System.out.println("]");
         }
     }
+
     public List<Integer> bfs(int start) {
         List<Integer> order = new ArrayList<>();
 
@@ -106,6 +107,7 @@ public class Graph {
         System.out.println();
         return order;
     }
+
     public int getVertexCount() {
         return vertices.size();
     }
