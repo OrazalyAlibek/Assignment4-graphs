@@ -28,15 +28,6 @@ The core class. Uses:
 - `Map<Integer, Vertex>` - maps each ID to its Vertex object
 - `Map<Integer, List<Vertex>>` - adjacency list: maps each vertex ID to a list of its neighbor Vertices
 
-Key methods:
-| Method | Description |
-|---|---|
-| `addVertex(Vertex v)` | Registers a vertex and creates an empty neighbor list |
-| `addEdge(int from, int to)` | Adds a directed edge in the adjacency list |
-| `printGraph()` | Prints every vertex and its neighbors |
-| `bfs(int start)` | Breadth-First Search from the given vertex |
-| `dfs(int start)` | Depth-First Search from the given vertex |
-
 Adjacency list example for the small graph:
 ```
 V0 -> [V1, V3]
