@@ -162,9 +162,6 @@ The experiment with different graph sizes reinforced the `O(V + E)` complexity c
 ### Differences Between BFS and DFS
 The most striking difference is the traversal order. BFS fans out horizontally across the graph (all neighbors first), making it perfect for shortest-path problems. DFS plunges vertically along a path until it hits a dead end, then backtracks making it natural for tasks like cycle detection or topological sort. In terms of space, BFS can consume more memory because it holds all vertices at the current "frontier" in the queue, while DFS only keeps the current path on the stack. For very wide, shallow graphs, DFS is more memory-efficient; for very deep graphs, BFS is safer.
 
-### Challenges Faced
-The trickiest part of the iterative DFS was handling duplicate entries on the stack. When multiple paths lead to the same vertex, it can be pushed multiple times before being popped, so the visited check must happen at pop-time, not push-time. Another challenge was ensuring the traversal order felt natural: pushing neighbors in reverse order onto the stack makes the leftmost neighbor get explored first, matching the intuitive left-to-right reading of the adjacency list.
-
 ---
 
 ## Repository Structure
